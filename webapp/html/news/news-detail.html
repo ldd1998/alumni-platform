@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻详情页面</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <script src="../../js/inclued.js"></script>
+    <script src="../../layui/layui.js"></script>
+</head>
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #23262E">
+    <div class="container">
+        <!--    使用include.js来引入导航栏-->
+        <include src="../common/navbar.html"></include>
+    </div>
+</nav>
+
+<div style="height: 80px"></div>
+<!-- 导航栏 -->
+<div class="container higher" id="container">
+    <!-- 导航栏 -->
+    <div class="header">
+        <ol class="breadcrumb">
+            <li><i class="fa fa-home"></i>&nbsp;<a href="${pageContext.request.contextPath}/index.action">主页</a></li>
+            <li class="active">新闻中心</li>
+        </ol>
+    </div>
+    <section>
+        <div class="col-md-9">
+            <div class="row blog-content">
+                <div class="panel panel-default panel-blog">
+                    <div class="panel-body" style="text-align: center">
+                        <h3 class="blogsingle-title">2021年元旦贺词：铿锵的步伐跑出最美城院</h3>
+                        <div class="row" style="padding-left: 280px">
+                            <ul class="blog-meta">
+                                <li class="pull-left">&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-calendar"></i></li>
+                                <li class="pull-left">2020-2-4</li>
+                                <li class="pull-left">&nbsp;|&nbsp;</li>
+                                <li class="pull-left"><i class="glyphicon glyphicon-eye-open"></i> 浏览 50 </li>
+                                <li class="pull-left">&nbsp;|&nbsp;</li>
+                                <li class="pull-left"><i class="glyphicon glyphicon-heart"></i> 喜欢 <span class="post-loves">60</span></li>
+                                <li class="pull-left">&nbsp;|&nbsp;</li>
+                                <li class="pull-left"><i class="glyphicon glyphicon-comment"></i> 评论 70</li>
+                            </ul>
+                        </div>
+                        <br>
+
+                        <img style="margin-left: 40px" src="http://www.hncu.edu.cn/__local/8/48/DE/D7DFFA098435E19CA258A505950_4EAA7FEA_1BDBD.jpg" height="500">
+                        <p>
+                            <strong style="    font-size: medium;white-space: normal;text-align: center;">与会领导专家合影留念。</strong>
+                        </p>
+                        <p style="    text-indent: 37px;line-height: 37px;">
+                            &nbsp;&nbsp;本网讯（通讯员 汤慧）2021年1月9日下午，数字化技术与国土空间规划学术研讨会暨数字化城乡空间规划关键技术湖南省重点实验室学术委员会年会在我校召开。
+
+                            校长李建奇教授出席会议并致欢迎辞，党委副书记、重点实验室主任汤放华教授，特邀专家华中师范大学龚胜生教授、敖荣军教授，重点实验室学术委员会主任、武汉大学詹庆明教授，学术委员会副主任、湖南科技大学李朝奎教授，学术委员会委员、中南大学郑伯红教授，广东国地规划科技股份有限公司副总裁张鸿辉教授、学校人事处处长吕贤军教授、建筑与城市规划学院院长曾志伟教授以及重点实验室方向负责人及骨干成员出席会议，会议由学校科研处处长张伟教授主持。
+
+                            会上，李建奇代表学校向出席本次会议的各位领导、专家、来宾表示热烈欢迎。他表示，经过多年努力，学校人才队伍不断壮大，科研平台建设不断加强，创新成果与应用成效明显增强，在国家城乡规划管理体制改革、加快建立国土空间规划体系背景下，加强数字化空间规划技术研究具有重大理论和实践意义，希望专家、委员对实验室建设与发展多提意见和建议。
+
+                            汤放华对重点实验室的发展历程进行了详细介绍。我校数字化城乡空间规划关键技术湖南省重点实验室于2018年获批，主要开展城乡空间规划关键技术、城乡空间数字化关键信息技术等方面研究。近年来获得国家自然科学基金项目5项，湖南省科技进步二等奖1项，《镇（乡）村绿地分类标准》被住建部批准为国家行业标准。
+
+                            重点实验室常务副主任曾志伟介绍了实验室年度工作进展和下年度工作重点。
+
+                            李朝奎、张鸿辉、郑伯红、龚胜生、敖荣军先后就重点实验室的建设发展、验收评估以及中长期的建设提出了意见。詹庆明就实验室方向凝练、队伍建设、科研成果培育、人才培养、经费保障等方面提出了建议。
+                        </p>
+<!--                        <br/>-->
+<!--                            <div class="blog-img">-->
+<!--                                <img src="${info.thumbImage}" class="img-responsive"/></div>-->
+<!--                            <div class="mb10"></div>-->
+<!--                        <p>${info.content}</p><%&#45;&#45; postId &#45;&#45;%>-->
+                    </div><!-- panel-body -->
+                    <div class="widget-photoday">
+                        <ul class="photo-meta">
+<!--                            <li><span><i class="fa fa-eye"></i> 浏览 (${info.views})</span></li>-->
+<!--                            <li><a href="javascript:;" onclick="lovePost(${info.infoId})" id="post-love-add">-->
+<!--                                <i class="fa fa-heart"></i> 喜欢 (-->
+<!--                                <arp class="post-loves">${info.loves}</arp>-->
+<!--                                )</a>-->
+<!--                            </li>-->
+<!--                            <li><a href="javascript:;" onclick="focusCommentPost()"><i class="fa fa-comment"></i> 评论</a></li>-->
+                        </ul>
+                    </div>
+                </div><!-- panel -->
+
+                <!--comment-list -->
+                <ol class="breadcrumb">
+                    <li class="active"><i class="fa fa-comments-o"></i> 所有评论</li>
+                </ol>
+<!--                <ul class="media-list comment-list" id="comment-list">-->
+<!--                    <img class="center-block" src='${pageContext.request.contextPath}/assets/images/icon/loading/loader.gif'>-->
+<!--                </ul>&lt;!&ndash; comment-list &ndash;&gt;-->
+
+                <!--登录可评论-->
+                <div class="mb20"></div>
+<!--                <h5 class="subtitle mb5"><i class="fa fa-user"></i> ${SESSION_USER.trueName}：</h5>-->
+                <div class="mb20"></div>
+                <form method="post" action="${pageContext.request.contextPath}/news/comment.action" id="form-comment">
+                        <textarea name="content" maxlength="500" rows="5" class="form-control"
+                                  id="comment-content"></textarea>
+                    <input hidden name="infoId" id="infoId" value="${info.infoId}">
+                    <div class="mb10"></div>
+                    <br>
+                    <button class="btn btn-primary pull-right" onclick="commentPost()" type="button"><i
+                            class="fa fa-comment"></i> 发表评论
+                    </button>
+                    <br>
+                    <br>
+                    <include src="../common/footer.html"></include>
+                </form>
+            </div><!-- row -->
+        </div>
+        <!-- col-md-9 -->
+        <include src="../common/news-hot.html"></include>
+
+    </section>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>湖南城市学院首页</title>
+    <link rel="stylesheet" href="../../layui/css/layui.css">
+    <link rel="stylesheet" href="../../css/home/home.css">
+</head>
+
+<body class="layui-layout-body">
+<!--------------------------------------------导航栏----------------------------------------------->
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">hncu校友系统</div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item"><a href="">首页</a></li>
+            <li class="layui-nav-item"><a href="">新闻中心</a></li>
+            <li class="layui-nav-item"><a href="">班级录</a></li>
+            <li class="layui-nav-item"><a href="">校友组织</a></li>
+            <li class="layui-nav-item"><a href="">校友论坛</a></li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    贤心
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">安全设置</a></dd>
+                    <dd><a href="">消息中心<span class="layui-badge-dot"></span></a></dd>
+                    <dd><a href="">退出登陆</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+<!----------------------------------轮播图-------------------------->
+<div class="layui-carousel" id="test1">
+    <div carousel-item>
+        <div><img src="../../images/hncu/subbaber.jpg" height="400" width="1920"/></div>
+        <div><img src="../../images/hncu/hncu-flow.jpg" height="633" width="1920"/></div>
+
+    </div>
+</div>
+
+<!---------------------------------轮播图底部--------------------------->
+<br>
+<div class="layui-row">
+    <div class="layui-col-lg2" style="background-color: #00F7DE">1</div>
+    <div class="layui-col-lg8" style="background-color: #00FF00">
+        <div class="layui-col-lg3" id="left-foot" style="background-color: #ff0026">
+            <div id="title" class="">新闻中心</div>
+            <div class="news">新闻</div>
+        </div>
+        <div class="layui-col-lg6" style="background-color: #232355">2</div>
+        <div class="layui-col-lg3" style="background-color: #d90b0b">2</div>
+
+    </div>
+    <div class="layui-col-lg2" style="background-color: #0000FF">2</div>
+</div>
+
+<script src="../../layui/layui.js"></script>
+<!--------------------------------------------导航栏----------------------------------------------->
+<script>
+    layui.use('element', function(){
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+        //监听导航点击
+        element.on('nav(demo)', function(elem){
+            //console.log(elem)
+            layer.msg(elem.text()+"1");
+        });
+    });
+</script>
+<!----------------------------------轮播图-------------------------->
+<script>
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            ,width: '100%' //设置容器宽度
+            ,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+            ,height: '400px'
+        });
+    });
+</script>
+</body>
+</html>
